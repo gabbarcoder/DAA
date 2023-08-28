@@ -5,12 +5,13 @@ int main()
     int table[126];
     char t[100], p[25];
     int n, i, k, j, m, flag = 0;
-    printf("Enter the Text\n ");gets(t);
+    printf("Enter the Text\n ");
+    gets(t);
     n = strlen(t);
     printf("Enter the Pattern\n ");
     gets(p);
     m = strlen(p);
-    for (i = 0; i <126; i++)
+    for (i = 0; i < 126; i++)
         table[i] = m;
     for (j = 0; j <= m - 2; j++)
         table[p[j]] = m - 1 - j;
